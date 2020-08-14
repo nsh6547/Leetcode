@@ -5,12 +5,8 @@ import re
 input= "A man, a plan, a canal: Panama"
 input1= "race a car"
 
-
-s= input.lower()
-print(s)
-s= re.sub('[^a-z0-9]','', s)
-print(s)
-s == s[::-1]
+s = input.lower()
+s = re.sub('[^a-z0-9]','',input)
 print(s)
 
 # class Solution: # 풀이 3 슬라이싱 사용 Runtime: 20ms
