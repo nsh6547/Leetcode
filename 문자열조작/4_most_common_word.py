@@ -8,6 +8,8 @@ words = [word for word in re.sub(r'[^\w]',' ',paragraph)
          .lower().split()
          if word not in banned]
 
-counts = collections.Counter(words)
+print(words)
 
+counts = collections.Counter(words)
+print(counts.most_common(1))
 print(counts.most_common(1)[0][0])
